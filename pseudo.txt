@@ -1,0 +1,103 @@
+PROGRAM DisplayPagination:
+    Display the "Previous" word or link
+    For EACH number in the list of pages DO
+        # Your pseudocode or calls to other program modules here!
+    END
+    Display the "Next" word or link
+END
+
+PROGRAM DisplayPreviousWordOrLink:
+    IF the current page is the first page THEN
+        Print the word "Previous"
+    ELSE
+        Print the word "Previous" with a link to the previous lesson
+    END
+END
+
+PROGRAM DisplayNext:
+    IF the current page is the last page THEN
+        Print the word “Next”
+    ELSE
+        Print the word “Next” with a link to the next lesson
+    END
+END
+
+
+PROGRAM DisplayFirstTwo:
+    IF current page is first THEN
+        Print word ‘1’
+        Print  ‘2’ with link to second page
+    ELSE IF current === 2 THEN
+        Print  ‘1’ with link to first page
+        Print ‘2’
+    ELSE
+        Print  ‘1’ with link to first page 
+        Print  ‘2’ with link to second page
+    END
+END
+
+PROGRAM DisplayLastTwo:
+    IF current page === last - 1 THEN
+        Print the last - 1 number
+        Print  last number with link to last page
+    ELSE IF current === last THEN
+        Print the last - 1 number with link to last - 1 page
+        Print  last number
+    ELSE
+        Print the last - 1 number with link to last - 1 page 
+        Print  last number with link to last page
+    END
+END
+
+PROGRAM PrintCurrent:
+    IF current === 1 THEN
+        //this is a shield case
+    ELSE IF current === 2 THEN
+        Print ‘3’ with link to page
+    ELSE IF current === 3 THEN
+        Print ‘4’ with link to page
+    ELSE IF current === second last THEN
+        Print third last with link
+    ELSE IF current === last
+        //shield case
+    ELSE
+        Print current - 1 with link
+	print current
+        Print current + 1 with link
+    END
+END
+
+PROGRAM PlaceFirstDots:
+    IF current > 4 THEN
+        Print ‘…’
+    END
+END
+
+PROGRAM PlaceLastDots:
+    IF current < Last - 3 THEN
+        Print ‘…’
+    END
+END
+
+PROGRAM BuildList:
+    Call DisplayNext()        
+    Call DisplayFirstTwo()
+    Call PlaceFirstDots()
+    Call PrintCurrent()
+    Call PrintLastDots()
+    Call DisplayLastTwo()
+    Call DisplayPreviousWordOrLink()
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
